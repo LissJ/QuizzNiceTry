@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins R';
+    src: url(font/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #031b34;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font: 500 20px 'Poppins';
+    color: #0265a7;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 10px;
+    height: 750px;
+    margin-bottom: 20px;
+
+    background-color: #e6eeff;
+    box-shadow: 10px 10px 10px #fde9e956;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.options {
+    margin-top: -20px;
+}
+
+h1 {
+    color: #003355;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #075e99;
+    margin-top: -20px;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.question {
+    margin-top: -20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #003355;
+}
+
+.options button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Poppins R';
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #ffffff;
+    box-shadow: 0 5px 5px 0 #06609c97;
+
+    transition: background-color 0.3s ease;
+}
+
+button {
+    width: 360px;
+    height: 90px;
+}
+
+#restartQuiz {
+    cursor: pointer;
+    color: #fff;
+    font: 500 18px 'Poppins R';
+    width: 200px;
+    height: 70px;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 0 5px 5px 0 #02294397;
+    margin-top: 25px;
+    background-color: #080e7a;
+}
+
+#restartQuiz:hover {
+    color: #000;
+    background-color: #aadcff;
+}
+
+.options button:hover {
+    background-color: #08456e;
+}
+
+.feedback {
+    font-size: 20px;
+    color: #cf2b18;
+    margin-top: 10px;
+}
+
+.imageQuestion {
+    width: 300px;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #0000001a;
+}

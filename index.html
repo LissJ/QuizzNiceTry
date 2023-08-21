@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice Try!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js" defer></script>
+    <script src="https://kit.fontawesome.com/4295c3d22e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Nice Try!</h1>
+        <h2>O melhor quiz da internet!</h2>
+        <img src="" alt="" class="imageQuestion">
+        <div class="question-container">
+            <div class="question"></div>
+            <div class="options"></div>
+            <div class="feedback"></div>
+        </div>
+        <div class="restart-button">
+            <button id="restartQuiz">Reiniciar o Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        const restartButton = document.getElementById('restartQuiz');
+        restartButton.addEventListener('click', () => {
+            if (confirm('Deseja reiniciar o quiz?')) {
+                currentQuestionIndex = 0;
+                chances = 2;
+                score = 0;
+                loadQuestion();
+            }
+        });
+    </script>
+</body>
+
+</html>
