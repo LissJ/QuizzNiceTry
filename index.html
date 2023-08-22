@@ -25,13 +25,21 @@
         </div>
     </div>
 
+    <!-- O BOTÃO, POR ESTAR A DISPOSIÇÃO A TODO MOMENTO, SERIA MELHOR O HTML PROCESSAR MAIS RÁPIDO ESSE CÓDIGO, POR ISSO, DECIDI QUE SERIA MELHOR CRIAR ESSE SCRIPT NO 'BODY' -->
     <script>
+        // SELECIONA UM BOTÃO DA PÁGINA HTML PELO ID
         const restartButton = document.getElementById('restartQuiz');
+        // QUANDO ESSE BOTÃO FOR CLICADO POR  
         restartButton.addEventListener('click', () => {
+            // SE A PESSOA CONFIRMAR A PERGUNTA "DESEJA REINICIAR O QUIZ". SE O JOGADOR CLICAR EM "OK", ISSO RETORNARÁ AO 'TRUE', CASO CONTRÁRIO, RETORNARÁ AO 'FALSE'
             if (confirm('Deseja reiniciar o quiz?')) {
+                // SE A RESPOSTA FOR 'TRUE', VOLTARÁ PARA A PRIMEIRA PERGUNTA (ZERO)
                 currentQuestionIndex = 0;
+                // AS CHANCES SERÃO RESTAURADAS
                 chances = 2;
+                // A PONTUAÇÃO SERÁ ZERADA
                 score = 0;
+                // A PRIMEIRA PERGUNTA SERÁ CARREGADA NOVAMENTE, COMO NO INÍCIO DO QUIZ
                 loadQuestion();
             }
         });
